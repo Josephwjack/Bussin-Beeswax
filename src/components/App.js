@@ -10,8 +10,10 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 function App() {
   return (
     <React.Fragment>
-      <NavBar />
+    <NavBar />
+    <div className="container d-flex flex-row justify-content-center my-4">
       <MerchControl />
+    </div>
     </React.Fragment>
   );
 }

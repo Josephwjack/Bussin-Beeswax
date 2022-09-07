@@ -7,9 +7,9 @@ function NewMerchForm(props){
   function handleNewMerchFormSubmission(event) {
     event.preventDefault();
     props.onNewMerchCreation({
-      names: event.target.name.value, 
-      location: event.target.price.value, 
-      issue: event.target.description.value, 
+      name: event.target.name.value, 
+      price: event.target.price.value, 
+      description: event.target.description.value, 
       id: v4()
     });
   }
@@ -23,7 +23,7 @@ function NewMerchForm(props){
         <input
           type='text'
           name='price'
-          placeholder='one Billy' />
+          placeholder='Price' />
         <textarea
           name='description'
           placeholder='Describe your merch.' />

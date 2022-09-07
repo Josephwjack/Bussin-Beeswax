@@ -36,8 +36,10 @@ class MerchControl extends React.Component {
     }
     return (
       <React.Fragment>
-        {currentlyVisibleState}
-        <button onClick={this.handleClick}>{buttonText}</button>
+        <div class="row justify-content-center">
+          {currentlyVisibleState}
+          <button onClick={this.handleClick}>{buttonText}</button>
+        </div>
       </React.Fragment>
     );
   }
