@@ -15,20 +15,24 @@ function NewMerchForm(props){
   }
   return (
     <React.Fragment>
-      <form onSubmit={handleNewMerchFormSubmission}>
-        <input
-          type='text'
-          name='name'
-          placeholder='Gucci flip flops' />
-        <input
-          type='text'
-          name='price'
-          placeholder='Price' />
-        <textarea
-          name='description'
-          placeholder='Describe your merch.' />
-        <button type='submit'>Add merch!</button>
-      </form>
+      <div className="container">
+        <div className="row">
+        <form onSubmit={handleNewMerchFormSubmission}>
+          <input
+            type='text'
+            name='name'
+            placeholder='Gucci flip flops' />
+          <input
+            type='text'
+            name='price'
+            placeholder='Price' />
+          <textarea
+            name='description'
+            placeholder='Describe your merch.' />
+          <button type='submit'>Add merch!</button>
+        </form>
+        </div>
+      </div>
       
     </React.Fragment>
   );
