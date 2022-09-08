@@ -1,8 +1,18 @@
-# Getting Started with Create React App
+# _Bussin Beeswax_
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## By **_Maxwell Alvord, Filmer Tolentino, Joseph Jack_**
 
-## Available Scripts
+## _Description_
+----------
+_Bussin Beeswax is a locally hosted store for a vendor specializing in beeswax. After selecting an item the quantity will reduce, once item is out of stock user will be notified. Weekday project to learn React Fundamentals._
+----------
+
+## _Diagram_
+------
+<div style="display: flex; justify-content: center"><img src="./src/img/Bussin.png"></div>
+
+
+## _Available Scripts_
 
 In the project directory, you can run:
 

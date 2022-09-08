@@ -6,7 +6,7 @@ const Navbar = () => {
     <React.Fragment>
       <nav className="navbar bg-light">
         <div className="container-fluid">
-          <div class="d-flex flex-row justify-content-start">
+          <div className="d-flex flex-row justify-content-start">
             <button className="navbar-brand btn">Home</button>
             <button className="navbar-brand btn">Merch</button>
             <button className="navbar-brand btn">Detail</button>

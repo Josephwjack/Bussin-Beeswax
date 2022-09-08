@@ -5,8 +5,7 @@ function Merch(props){
   return (
     <React.Fragment>
       <div onClick = {() => props.whenMerchClicked(props.id)}>
-        { /* We add a div with an onClick function. Don't forget to close out the div below! */}
-        <h3>{props.price} - {props.name}</h3>
+        <h3>{props.price} - {props.name} - {props.quantity}</h3>
         <p><em>{props.description}</em></p>
         <hr/>
       </div>
@@ -18,8 +17,9 @@ Merch.propTypes = {
   name: PropTypes.string,
   price: PropTypes.string,
   description: PropTypes.string,
-  id: PropTypes.string, // new PropType
-  whenMerchClicked: PropTypes.func // new PropType
+  id: PropTypes.string,
+  quantity: PropTypes.number,
+  whenMerchClicked: PropTypes.func
 };
 
 export default Merch;

@@ -1,6 +1,7 @@
 import React from "react";
 import { v4 } from 'uuid';
 import PropTypes from "prop-types";
+import ReusableForm from './ReusableForm';
 
 function NewMerchForm(props){
 
@@ -10,36 +11,21 @@ function NewMerchForm(props){
       name: event.target.name.value, 
       price: event.target.price.value, 
       description: event.target.description.value, 
-      id: v4()
+      id: v4(),
+      quantity: event.target.quantity.value
     });
   }
   return (
     <React.Fragment>
-      <div className="container">
-        <div className="row">
-        <form onSubmit={handleNewMerchFormSubmission}>
-          <input
-            type='text'
-            name='name'
-            placeholder='Gucci flip flops' />
-          <input
-            type='text'
-            name='price'
-            placeholder='Price' />
-          <textarea
-            name='description'
-            placeholder='Describe your merch.' />
-          <button type='submit'>Add merch!</button>
-        </form>
-        </div>
-      </div>
-      
+      <ReusableForm
+        formSubmissionHandler={handleNewMerchFormSubmission} 
+        buttonText="Add" />
     </React.Fragment>
   );
 }
 
 NewMerchForm.propTypes = {
-  onNewMerchCreation: PropTypes.func
+  onNewMerchCreation: PropTypes.func,
 };
 
 export default NewMerchForm;

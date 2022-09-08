@@ -1,5 +1,5 @@
 import React from 'react';
-import Merch from './Merch';
+import Merch from "./Merch";
 import PropTypes from 'prop-types';
 
 function MerchList(props){
@@ -13,6 +13,7 @@ function MerchList(props){
           name={merch.name}
           price={merch.price}
           description={merch.description}
+          quantity={merch.quantity}
           id={merch.id}
           key={merch.id}/>
       )}
