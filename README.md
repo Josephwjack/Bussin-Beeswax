@@ -5,7 +5,7 @@
 ## _Description_
 ----------
 _Bussin Beeswax is a locally hosted store for a vendor specializing in beeswax. After selecting an item the quantity will reduce, once item is out of stock user will be notified. Weekday project to learn React Fundamentals._
-----------
+
 
 ## _Diagram_
 ------
