@@ -13,7 +13,7 @@ function MerchDetail(props){
       <p> Quantity left: {merch.quantity}</p>
       {/* <button onClick={() => onClickingSell(merch.id)}></button> */}
       <hr/>
-      <button onClick={()=> props.OnClickingDelete(merch.id)}>Delete Merch</button>
+      <button onClick={()=> props.onClickingDelete(merch.id)}>Delete Merch</button>
       <hr/>
     </React.Fragment>
   );

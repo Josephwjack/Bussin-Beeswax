@@ -29,7 +29,7 @@ function ReusableForm(props) {
           <div className="col my-2">
             <input style={reusableFormStyles}
             className="mx-3"
-            type='number'
+            type="number"
             name='quantity'
             placeholder='10' />
           </div>
